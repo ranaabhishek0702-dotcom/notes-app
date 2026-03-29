@@ -1,15 +1,15 @@
 const bcrypt = require('bcrypt')
-const Passcode = require('../models/Passcode')
-const ArchivedNote = require('../models/ArchivedNote')
+const Passcode = require('/Users/abhishekrana/notes-app/backend/models/Passcode.js')
+const ArchivedNote = require('/Users/abhishekrana/notes-app/backend/models/ArchivedNote.js')
 
-// Reusable passcode check
+
 const checkPasscode = async (passcode) => {
   const existing = await Passcode.findOne()
   if (!existing) return false
   return await bcrypt.compare(passcode, existing.hash)
 }
 
-// GET all archived notes
+
 const getArchivedNotes = async (req, res) => {
   try {
     const valid = await checkPasscode(req.body.passcode)
@@ -37,7 +37,7 @@ const getArchivedNote = async (req, res) => {
   }
 }
 
-// POST create archived note
+
 const createArchivedNote = async (req, res) => {
   try {
     const valid = await checkPasscode(req.body.passcode)
@@ -53,7 +53,7 @@ const createArchivedNote = async (req, res) => {
   }
 }
 
-// PUT update archived note
+
 const updateArchivedNote = async (req, res) => {
   try {
     const valid = await checkPasscode(req.body.passcode)
