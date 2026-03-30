@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt')
-const Passcode = require('/Users/abhishekrana/notes-app/backend/models/Passcode.js')
+const Passcode = require('../models/Passcode.js')
 
 const setPasscode = async(req , res) =>{
   try{

@@ -4,7 +4,7 @@ const {
   setPasscode,
   verifyPasscode,
   resetPasscode,
-} = require('/Users/abhishekrana/notes-app/backend/controllers/passcodeController.js')
+} = require('../controllers/passcodeController.js')
 
 router.post('/set', setPasscode)
 router.post('/verify', verifyPasscode)

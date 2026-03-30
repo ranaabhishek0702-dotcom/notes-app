@@ -1,4 +1,4 @@
-const Note = require('/Users/abhishekrana/notes-app/backend/models/Note.js')
+const Note = require('../models/Note.js')
 
 const getNotes = async(req , res) => {
   try{

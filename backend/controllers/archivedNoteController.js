@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt')
-const Passcode = require('/Users/abhishekrana/notes-app/backend/models/Passcode.js')
-const ArchivedNote = require('/Users/abhishekrana/notes-app/backend/models/ArchivedNote.js')
+const Passcode = require('../models/Passcode.js')
+const ArchivedNote = require('../models/ArchivedNote.js')
 
 
 const checkPasscode = async (passcode) => {

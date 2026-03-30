@@ -6,7 +6,7 @@ const {
   createArchivedNote,
   updateArchivedNote,
   deleteArchivedNote,
-} = require('/Users/abhishekrana/notes-app/backend/controllers/archivedNoteController.js')
+} = require('../controllers/archivedNoteController.js')
 
 router.route('/').get(getArchivedNotes).post(createArchivedNote)
 router.route('/:id').get(getArchivedNote).put(updateArchivedNote).delete(deleteArchivedNote)
