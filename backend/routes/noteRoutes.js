@@ -7,7 +7,7 @@ const{
   createNote,
   updateNote,
   deleteNote
-} = require('backend/controllers/noteController.js')
+} = require('../controllers/noteController.js')
 
 router.route('/').get(getNotes).post(createNote)
 router.route('/:id').get(getNote).put(updateNote).delete(deleteNote)
