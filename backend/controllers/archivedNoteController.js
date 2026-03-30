@@ -22,7 +22,7 @@ const getArchivedNotes = async (req, res) => {
   }
 }
 
-// GET single archived note
+
 const getArchivedNote = async (req, res) => {
   try {
     const valid = await checkPasscode(req.body.passcode)
