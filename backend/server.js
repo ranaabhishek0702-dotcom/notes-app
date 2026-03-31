@@ -5,7 +5,7 @@ const connectDB = require('./config/db')
 const noteRoutes = require('./routes/noteRoutes')
 const archivedNoteRoutes = require('./routes/archivedNoteRoutes')
 const passcodeRoutes = require('./routes/passcodeRoutes')
-dotenv.config()
+dotenv.config({ override: false })
 
 connectDB()
 
